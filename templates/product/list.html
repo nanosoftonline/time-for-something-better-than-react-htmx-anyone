@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="/table.css">
+{% endblock %}
+
+
+{% block content %}
+<div class="header">Products</div>
+<div class="table-container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for product in products %}
+            <tr>
+                <td>{{loop.index}}</td>
+                <td>{{product.name}}</td>
+                <td>${{product.price}}</td>
+                <td>
+                    <button class="action-btn btn-edit">Edit</button>
+                    <button class="action-btn btn-delete">Delete</button>
+                </td>
+            </tr>
+
+            {% endfor %}
+
+        </tbody>
+    </table>
+</div>
+{% endblock %}

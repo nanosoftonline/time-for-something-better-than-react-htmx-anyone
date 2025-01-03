@@ -1,10 +1,12 @@
-# Time for something better than React. HTMX anyone?
+# Time to move on from React.
 
-There comes a time in your front end development struggles where you will say, "Damn!, aren't we complicating things here?" or "Do we really need React for this project". It's been 10+ years of React and it just seems to be getting more complicated to choose and use the appropriate react framework.
+At some point in your frontend development journey, you’ll probably think, "Wait a second, are we making this much harder than it needs to be?" It’s been over 10 years of React, Vue, Angular, and a bunch of other JavaScript frameworks. I think we've had the tools available to us and sometimes think new ones would make our lives easier.
 
-New JS libs or versions of them keep appearing, promising to make our dev experience so much better, while continuing to take us further from what is already have as good enough: The browser, HTML, JS and CSS. For most projects, big or small, all we really need is some web server that serves html dynamically, and once served we can choose to use JS to make it pleasant to interact with.
+As developers, our job is to deliver solutions that are easy to maintain. That means ensuring they’re simple to update, quick to modify, and straightforward to pass on to anyone with a basic understanding of web fundamentals—like HTML, JavaScript, CSS, and how browsers function.
 
-Let's take a look back to browser routing, form posting, anchor tag linking. We'll then look at other JS libs if needed.
+We've used and learned a lot from Front-End frameworks, Time to move on to something better by going back to the future with HTMX
+
+In this blog I aim to cover how we can use basic things like server generated html through template engines and small libraries like HTMX to enhance our application
 
 ### **Table of Contents**
 
@@ -75,9 +77,9 @@ Let's take a look back to browser routing, form posting, anchor tag linking. We'
 
 Web development these days feels way more complicated than it needs to be. React, Angular, Vue—these frameworks have taken over, and with them comes a mountain of tools, build steps, and constant updates just to keep things running. Sure, they’re great for some use cases, but let’s be honest: a lot of apps don’t need all that extra baggage.
 
-My view on the current state of web development is that it has become way to too complicated. We have so many front-end frameworks that promise to make our lives so much better. These frameworks comes with a set of instructions how to scaffold, create, structure and build our code. It also needs to be updated all the time. We develop a sense of FOMO if we don't.
+My view on the current state of web development is that it has become way to too complicated. We have so many front-end frameworks that promise to make our lives so much better. These frameworks comes with a set of instructions how to scaffold, create, structure and build our code. It also needs to be updated all the time.
 
-We feel that the cool kids are doing it, so we have to do it as well. At the end of the day we all just want to build an app our client feels comfortable using with as the most maintainable way possible. And By maintainable I mean, can we make changes easily and quickly, can my code speak for itself when sharing it with other developers. Can I revisit my code in a few months time without remembering how a specific framework works.
+We feel that the cool kids are doing it, so we have to do it as well. At the end of the day we just want to build an app our client feels comfortable using. The code has to be easy to maintain.
 
 The starting point for any software is that can I build the same thing with the core tools I have. For this specific project, do I really need the lastest version of React, or Vue or Astro or Next, etc. Can I just start with my chosen server technology or node, python, go, rust, deno, .net
 
